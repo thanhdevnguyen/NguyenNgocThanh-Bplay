@@ -1,0 +1,57 @@
+.container-banner {
+  position: relative;
+  background-color: #15161e;
+  .banner {
+  }
+
+  .header-wave {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url(./assets/images/home/header_wave.svg);
+    background-size: contain;
+    background-position: bottom;
+    z-index: 1;
+  }
+  .container-scroll {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    p {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 25px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+  }
+  .container-scroll:hover {
+    text-underline: none;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-banner {
+    .container-scroll{
+      p{
+        font-size: 15px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+      img {
+        max-width: 30px;
+      }
+    }
+  }
+}

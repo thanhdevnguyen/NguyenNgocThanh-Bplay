@@ -1,0 +1,76 @@
+.container-partner {
+  background-image: url(./assets/images/home/background_cycle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin: 0 auto;
+  padding: 120px 0;
+
+  .partner-mobile {
+    display: none;
+  }
+
+  .item {
+    padding: 0 30px;
+  }
+
+  .container-image {
+  }
+
+  .container-title {
+    color: #FDFDFD;
+    margin: 80px auto 0 auto;
+
+    .bplay-title {
+      color: #FF3232;
+      font-size: 25px;
+      letter-spacing: 10px;
+      font-weight: 300;
+    }
+
+    .title {
+      font-size: 48px;
+      line-height: 58px;
+      font-weight: 650;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-partner {
+    background-image: unset;
+    padding: 50px 0;
+    .container-title {
+      .bplay-title {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+
+      .title {
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      .content {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 400;
+      }
+    }
+    .partner-desktop {
+      display: none;
+    }
+    .partner-mobile {
+      display: block;
+      text-align: center;
+      .cycle-mobile {
+        margin-top: 40px;
+        background-image: url(./assets/images/home/cycle-mobile.png);
+        background-position: left bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
